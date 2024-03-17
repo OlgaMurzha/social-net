@@ -1,27 +1,17 @@
 import React from "react";
 import './App.css';
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 const App = () => {
     return (
         <div className="app-wrapper">
-            <header className="header">
-                <img src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg" alt=""></img>
-            </header>
-            <nav className="nav">
-                <div className="content">
-                    <div>
-                        Profile
-                    </div>
-                    <div>
-                        Messages
-                    </div>
-                    <div>
-                        Main Content
-                    </div>
-                </div>
-            </nav>
+            <Header />
+            <Navbar />
+            <Profile />
         </div>
-    )
+    );
 }
 
 export default App;
